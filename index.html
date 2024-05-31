@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="container">
+
+        <div class="left">
+            <form id="registrationForm">
+               <p> Name:<input type="text" id="name" name="name" required><br><br></p>
+               <p>Email:<input type="email" id="email" name="email" required><br><br></p>
+               <p> Website:<input type="url" id="website" name="website" required><br><br></p>
+               <p>Image Link:<input type="text" id="image" name="image" required><br><br></p>
+               <p>Gender : Male<input type="radio" name="gender" id="male" value="male"> Female<input type="radio" name="gender" id="female" value="female"><br><br></p>
+               <p>Skills : JavaScript <input type="checkbox" name="skill[]" id="savascript" value="JavaScript">
+                HTML <input type="checkbox" name="skill[]" id="html" value="HTML">
+                CSS <input type="checkbox" name="skill[]" id="css" value="CSS"><br><br></p>
+                <button type="button" onclick="submitForm(event)">Register</button>
+            </form>
+        </div>
+
+
+
+        <div class="right">
+
+            <div id="registeredInfo">
+                </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
